@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  background-color: aqua;
+  width: 100%;
+  z-index: 100000;
+  justify-content: space-between;
+  position: fixed;
+  .icon {
+    position: absolute;
+    left: 46px;
+    top: 15px;
+    margin: 0;
+    @media (max-width: 768px) {
+      left: 25px;
+      top: 15px;
+    }
+    @media (max-width: 480px) {
+      left: 20px;
+      top: 10px;
+    }
+    .luMountain {
+      font-size: 30px;
+      @media (max-width: 768px) {
+        font-size: 29px;
+      }
+      @media (max-width: 480px) {
+        font-size: 29px;
+      }
+    }
+  }
+  .modalicon {
+    position: absolute;
+    right: 47px;
+    top: 15px;
+    margin: 0;
+    @media (max-width: 768px) {
+      right: 25px;
+      top: 12px;
+    }
+    @media (max-width: 480px) {
+      right: 22px;
+      top: 12px;
+    }
+    .faGripLines {
+      font-size: 30px;
+    }
+  }
+}

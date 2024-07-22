@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+.thirddiv {
+  height: 300vh; // Make this taller than the viewport
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+  .thirdtrial {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-weight: 600;
+
+      letter-spacing: -5px;
+      line-height: 1;
+      font-size: 210px;
+      padding: 40px;
+      color: linear-gradient(rgba(255, 255, 255, 0.383), rgb(255, 255, 255));
+      background-color: rgb(192, 192, 192);
+      position: fixed;
+      top: 13%;
+      transform-origin: center;
+      transition: transform 0.1s ease-out;
+      mask-image: radial-gradient(circle, black 36%, transparent 36%);
+      -webkit-mask-image: radial-gradient(circle, black 36%, transparent 36%);
+     
+      @media (max-width: 1333px) {
+        font-size: 185px;
+        text-align: center;
+        top: 17%;
+      }
+     
+      @media (max-width: 1193px) {
+        font-size: 160px;
+        text-align: center;
+        top: 20%;
+      }
+      @media (max-width: 993px) {
+        font-size: 135px;
+        text-align: center;
+        top: 24%;
+      }
+      @media (max-width: 768px) {
+        font-size: 120px;
+        text-align: center;
+        top: 24%;
+      }
+
+      @media (max-width: 568px) {
+        font-size: 125px;
+        text-align: center;
+        top: 6%;
+      }
+      @media (max-width: 480px) {
+        font-size: 120px;
+        text-align: center;
+        top: 7%;
+      }
+    }
+  }
+}

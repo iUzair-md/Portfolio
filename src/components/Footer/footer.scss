@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+.footer {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+//   background-color: aqua;
+  min-height: 200px;
+  @media (max-width: 1193px) {
+    align-items: center;
+  }
+
+  @media (max-width: 993px) {
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .leftfooter {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    // background-color: aqua;
+    margin: 0;
+    gap: 21px;
+
+    @media (max-width: 1193px) {
+      flex: 5;
+      gap: 15px;
+    }
+    @media (max-width: 993px) {
+      gap: 15px;
+      flex: 5;
+    }
+    @media (max-width: 768px) {
+      align-items: center;
+      gap: 15px;
+    }
+    @media (max-width: 480px) {
+      align-items: center;
+      gap: 15px;
+    }
+    .footername {
+      margin: 0;
+      margin-left: 50px;
+      @media (max-width: 1193px) {
+        margin-left: 35px;
+      }
+      @media (max-width: 993px) {
+        margin-left: 30px;
+      }
+      @media (max-width: 768px) {
+        flex-direction: column;
+        margin-left: 0px;
+      }
+      @media (max-width: 480px) {
+        flex-direction: column;
+        margin-left: 0px;
+      }
+      h1 {
+        font-size: 33px;
+        color: rgb(80, 80, 80);
+        @media (max-width: 1193px) {
+          font-size: 31px;
+          font-weight: 600;
+        }
+        @media (max-width: 993px) {
+          font-size: 29px;
+          font-weight: 600;
+        }
+        @media (max-width: 768px) {
+          flex-direction: column;
+          font-size: 32px;
+          font-weight: 600;
+        }
+        @media (max-width: 480px) {
+          flex-direction: column;
+          font-size: 31px;
+          font-weight: 600;
+        }
+      }
+    }
+    .footerrole {
+      margin: 0;
+      margin-left: 50px;
+      display: flex;
+      @media (max-width: 1193px) {
+        margin-left: 35px;
+      }
+      @media (max-width: 993px) {
+        margin-left: 30px;
+      }
+      @media (max-width: 768px) {
+        flex-direction: column;
+        margin-left: 0px;
+      }
+      @media (max-width: 480px) {
+        flex-direction: column;
+        margin-left: 0px;
+      }
+      p {
+        margin: 0;
+        font-size: 21px;
+        background: black;
+        color: white;
+        padding: 10px;
+        @media (max-width: 1193px) {
+          font-size: 19px;
+        }
+        @media (max-width: 993px) {
+          font-size: 17px;
+        }
+        @media (max-width: 768px) {
+          font-size: 21px;
+        }
+        @media (max-width: 480px) {
+        }
+      }
+    }
+  }
+
+  .midfooter {
+    flex: 4;
+    // background-color: brown;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-top: 10px;
+    @media (max-width: 1193px) {
+      gap: 10px;
+      flex: 4;
+    }
+    @media (max-width: 993px) {
+      gap: 10px;
+      flex: 4;
+      padding-top: 7px;
+    }
+    @media (max-width: 768px) {
+      align-items: center;
+      gap: 13px;
+      flex: 4;
+    }
+    @media (max-width: 480px) {
+      align-items: center;
+      gap: 13px;
+      padding-top: 0px;
+    }
+    .footer-link {
+      margin: 0;
+      text-decoration: none;
+      color: rgb(80, 80, 80);
+      
+      @media (max-width: 993px) {
+      }
+      @media (max-width: 768px) {
+      }
+      @media (max-width: 480px) {
+      }
+      h1 {
+        font-size: 19px;
+        transition: color 0.2s ease; // Smooth color transition for hover effect
+        &:hover {
+          color: #aeafb0; // LinkedIn blue color on hover
+        }
+        @media (max-width: 1193px) {
+          font-size: 18px;
+        }
+        @media (max-width: 993px) {
+          font-size: 18px;
+        }
+        @media (max-width: 768px) {
+          font-size: 19px;
+        }
+        @media (max-width: 480px) {
+          font-size: 18px;
+        }
+      }
+    }
+    .footer-link-resume {
+      margin: 0;
+      text-decoration: none;
+      font-size: 20px;
+      color: rgb(80, 80, 80);
+      font-weight: 700;
+      transition: color 0.2s ease; // Smooth color transition for hover effect
+      &:hover {
+        color: #aeafb0; // LinkedIn blue color on hover
+      }
+      @media (max-width: 1193px) {
+        font-size: 18px;
+      }
+      @media (max-width: 993px) {
+        font-size: 18px;
+      }
+      @media (max-width: 768px) {
+        font-size: 19px;
+      }
+      @media (max-width: 480px) {
+        font-size: 18px;
+      }
+    }
+  }
+  .rightfooter {
+    flex: 3;
+    // background-color: cadetblue;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 30px;
+    @media (max-width: 1193px) {
+      flex: 3;
+      gap: 29px;
+    }
+    @media (max-width: 993px) {
+      flex: 3;
+      gap: 27px;
+    }
+    @media (max-width: 768px) {
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 480px) {
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .footeremail {
+      padding-right: 50px;
+      margin: 0;
+
+      @media (max-width: 1193px) {
+        padding-right: 35px;
+      }
+      @media (max-width: 993px) {
+        padding-right: 30px;
+      }
+      @media (max-width: 768px) {
+        padding-right: 0px;
+      }
+      @media (max-width: 480px) {
+        padding-right: 0px;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(80, 80, 80);
+        font-size: 28px;
+        transition: color 0.2s ease; // Smooth color transition for hover effect
+        &:hover {
+          color: #aeafb0; // LinkedIn blue color on hover
+        }
+        @media (max-width: 1193px) {
+          font-size: 24px;
+        }
+        @media (max-width: 993px) {
+          font-size: 22px;
+        }
+        @media (max-width: 768px) {
+          font-size: 27px;
+        }
+        @media (max-width: 480px) {
+          font-size: 25px;
+        }
+      }
+    }
+    .footerlinks {
+      padding-right: 50px;
+      margin: 0;
+      display: flex;
+      gap: 10px;
+
+      @media (max-width: 1193px) {
+        padding-right: 35px;
+      }
+      @media (max-width: 993px) {
+        padding-right: 30px;
+      }
+      @media (max-width: 768px) {
+        padding-right: 0px;
+      }
+      @media (max-width: 480px) {
+        padding-right: 0px;
+      }
+      .linkedin {
+        margin: 0;
+        @media (max-width: 993px) {
+        }
+        @media (max-width: 768px) {
+        }
+        @media (max-width: 480px) {
+        }
+        .linkedina {
+          text-decoration: none;
+          color: rgb(80, 80, 80);
+          font-size: 40px;
+          transition: color 0.2s ease; // Smooth color transition for hover effect
+          &:hover {
+            color: #aeafb0; // LinkedIn blue color on hover
+          }
+          @media (max-width: 1193px) {
+            font-size: 36px;
+          }
+          @media (max-width: 993px) {
+            font-size: 33px;
+          }
+          @media (max-width: 768px) {
+          }
+          @media (max-width: 480px) {
+          }
+        }
+      }
+      .twitter {
+        margin: 0;
+        @media (max-width: 993px) {
+        }
+        @media (max-width: 768px) {
+        }
+        @media (max-width: 480px) {
+        }
+        .twittera {
+          text-decoration: none;
+          color: rgb(80, 80, 80);
+          font-size: 40px;
+          transition: color 0.2s ease; // Smooth color transition for hover effect
+          &:hover {
+            color: #aeafb0; // LinkedIn blue color on hover
+          }
+          @media (max-width: 1193px) {
+            font-size: 36px;
+          }
+          @media (max-width: 993px) {
+            font-size: 33px;
+          }
+          @media (max-width: 768px) {
+          }
+          @media (max-width: 480px) {
+          }
+        }
+      }
+    }
+  }
+}

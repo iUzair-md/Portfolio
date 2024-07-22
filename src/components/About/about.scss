@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+.about {
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  .background {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/images/about4.jpeg");
+    position: relative;
+    @media (max-width: 1193px) {
+    }
+    @media (max-width: 993px) {
+    }
+    @media (max-width: 768px) {
+    }
+    @media (max-width: 480px) {
+      height: 70vh;
+    }
+    h1 {
+      margin: 0;
+      color: rgb(69, 69, 69);
+      font-size: 60px;
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      position: relative;
+      bottom: -80px;
+      border-radius: 3px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      @media (max-width: 1193px) {
+        font-size: 5vw;
+        bottom: -50px;
+      }
+      @media (max-width: 1093px) {
+        font-size: 5vw;
+        bottom: -50px;
+      }
+      @media (max-width: 993px) {
+        font-size: 6vw;
+        bottom: -50px;
+      }
+      @media (max-width: 863px) {
+        font-size: 7vw;
+        bottom: -50px;
+      }
+      @media (max-width: 768px) {
+        font-size: 7vw;
+        bottom: -50px;
+      }
+      @media (max-width: 763px) {
+        font-size: 7vw;
+        bottom: -50px;
+      }
+      @media (max-width: 628px) {
+        font-size: 8vw;
+        bottom: -50px;
+      }
+      @media (max-width: 480px) {
+        font-size: 8vw;
+        bottom: -50px;
+      }
+    }
+    .mediv {
+      position: relative;
+      bottom: -100px;
+      margin: 0;
+      background-image: url("/images/me6.jpeg");
+      width: 60%;
+      height: 80%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      @media (max-width: 1193px) {
+        background-image: url("/images/me6.jpeg");
+        background-size: cover;
+        width: 60%;
+        height: 80%;
+        bottom: -70px;
+      }
+      @media (max-width: 1093px) {
+        background-image: url("/images/me6.jpeg");
+        background-size: cover;
+        width: 63%;
+        height: 80%;
+        bottom: -70px;
+      }
+      @media (max-width: 993px) {
+        background-image: url("/images/me6.jpeg");
+        background-size: cover;
+        width: 65%;
+        height: 79%;
+        bottom: -70px;
+      }
+      @media (max-width: 863px) {
+        background-image: url("/images/me6.jpeg");
+        background-size: cover;
+        width: 70%;
+        height: 79%;
+        bottom: -70px;
+      }
+
+      @media (max-width: 768px) {
+        background-image: url("/images/me6.jpeg");
+        background-size: cover;
+        width: 75%;
+        height: 79%;
+        bottom: -70px;
+      }
+
+      @media (max-width: 628px) {
+        background-image: url("/images/me5.jpeg");
+        background-size: cover;
+        width: 75%;
+        height: 79%;
+        bottom: -70px;
+      }
+      @media (max-width: 480px) {
+        background-image: url("/images/me5.jpeg");
+        background-size: cover;
+        width: 75%;
+        height: 79%;
+        bottom: -70px;
+      }
+    }
+  }
+  .paragraphs{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom:40px ;
+    @media (max-width: 1278px) {
+
+      }
+      @media (max-width: 993px) {
+
+      }
+      @media (max-width: 768px) {
+
+      }
+      @media (max-width: 480px) {
+
+      }
+      p{
+        width: 75%;
+        margin: 0;
+        color: rgb(0, 0, 0);
+        font-size: 22px;
+        text-align: justify;
+        @media (max-width: 1193px) {
+            width: 75%;
+            font-size: 21px; 
+          }
+          @media (max-width: 1093px) {
+            width: 75%;
+            font-size: 20px;           }
+          @media (max-width: 993px) {
+            width: 75%;
+            font-size: 20px;  
+                }
+          @media (max-width: 863px) {
+            width: 80%;
+            font-size: 19px;
+          }
+    
+          @media (max-width: 768px) {
+            width: 88%;
+            font-size: 19px;
+          }
+    
+          @media (max-width: 628px) {
+            width: 88%;
+            font-size: 19px;
+
+          }
+          @media (max-width: 480px) {
+            width: 88%;
+            font-size: 18px;
+          }
+      }
+  }
+  .sayhii{
+    margin: 0;
+  }
+}

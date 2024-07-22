@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+.fullscreen-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start; // Change this to align content to the top
+  justify-content: center;
+  //   background-color: rgba(0, 0, 0, 0);
+  z-index: 1000;
+  visibility: hidden;
+  transition: visibility 0.3s ease, background-color 0.3s ease;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  &.show {
+    visibility: visible;
+  }
+  .fullscreen-modal-content {
+    display: flex;
+    flex-direction: column;
+    // background-color: rgba(18, 18, 45, 0.998);
+    background-color: rgba(64, 64, 112, 0.977);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateY(-100%); // Start off-screen above
+    transition: transform 0.3s ease;
+
+    @media (max-width: 768px) {
+    }
+    @media (max-width: 480px) {
+    }
+    .buttonclose {
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      //   background-color: rgb(190, 164, 70);
+      button {
+        margin: 0;
+        display: flex;
+        background: none;
+        border: none;
+        // background-color: blueviolet;
+
+        .close-icon {
+          margin: 0;
+          color: white;
+          font-size: 40px;
+          transition: color 0.2s ease; // Smooth color transition for hover effect
+          &:hover {
+            color: #bababa;
+          }
+          @media (max-width: 768px) {
+            font-size: 33px;
+          }
+          @media (max-width: 480px) {
+            font-size: 33px;
+          }
+        }
+      }
+    }
+    .empty {
+      margin: 0;
+    //   background-color: aqua;
+      flex: 1;
+      @media (max-width: 993px) {
+        flex: 1;
+      }
+      @media (max-width: 768px) {
+        flex: 1;
+        display: none;
+      }
+      @media (max-width: 480px) {
+        flex: 1;
+        display: none;
+      }
+    }
+    .middiv {
+      margin: 0;
+    //   background-color: blue;
+      flex: 6;
+      display: flex;
+      @media (max-width: 993px) {
+        flex: 13;
+      }
+      @media (max-width: 768px) {
+        flex: 15;
+        flex-direction: column;
+      }
+      @media (max-width: 480px) {
+        flex: 15;
+        flex-direction: column;
+      }
+      .namediv {
+        margin: 0;
+        flex: 3;
+        // background-color: brown;
+        color: rgb(211, 211, 211);
+        display: flex;
+        flex-direction: column;
+        padding-left: 35px;
+        padding-top: 21px;
+        gap: 10px;
+
+        @media (max-width: 993px) {
+          flex: 3;
+          padding-left: 7px;
+          padding-top: 11px;
+          gap: 10px;
+        }
+        @media (max-width: 768px) {
+          flex: 2;
+          padding-left: 0;
+          padding-top: 0px;
+          gap: 4px;
+          align-items: center;
+        }
+        @media (max-width: 480px) {
+          flex: 2;
+          padding-left: 0;
+          padding-top: 0px;
+          gap: 4px;
+          align-items: center;
+        }
+        .myname {
+          margin: 0;
+          font-size: 35px;
+          font-weight: 600;
+          @media (max-width: 993px) {
+            font-size: 31px;
+            font-weight: 600;
+          }
+          @media (max-width: 768px) {
+            font-size: 32px;
+            font-weight: 600;
+          }
+          @media (max-width: 480px) {
+            font-size: 29px;
+            font-weight: 600;
+          }
+        }
+        .myrole {
+          background-color: black;
+          color: white;
+          margin: 0;
+          width: max-content;
+          padding: 10px;
+          font-size: 22px;
+          font-weight: 600;
+          @media (max-width: 993px) {
+            font-size: 20px;
+          }
+          @media (max-width: 768px) {
+            font-size: 21px;
+          }
+          @media (max-width: 480px) {
+            font-size: 20px;
+          }
+        }
+      }
+      .linksdiv {
+        flex: 5;
+        margin: 0;
+        // background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+
+        @media (max-width: 993px) {
+          flex: 5;
+        }
+        @media (max-width: 768px) {
+          flex: 6;
+          justify-content: center;
+          align-items: center;
+        }
+        @media (max-width: 480px) {
+          justify-content: center;
+          align-items: center;
+          flex: 5;
+        }
+        .modal-link {
+          margin: 0;
+        //   background-color: rgb(54, 211, 67);
+          text-decoration: none;
+          color: white;
+          @media (max-width: 993px) {
+          }
+          @media (max-width: 768px) {
+          }
+          @media (max-width: 480px) {
+          }
+        }
+        .button_test {
+          margin: 0;
+          font-size: 128px;
+          line-height: 1.2;
+          cursor: pointer;
+          letter-spacing: 0;
+          transition: color 0.3s ease; // Smooth color transition for hover effect
+          &:hover {
+            color: #aeafb0; // LinkedIn blue color on hover
+          }
+          @media (max-width: 993px) {
+            font-size: 92px;
+            font-weight: 800;
+          }
+          @media (max-width: 768px) {
+            font-size: 80px;
+            line-height: 1.1;
+          }
+          @media (max-width: 480px) {
+            font-size: 60px;
+          }
+        }
+      }
+    }
+    .lowerdiv {
+      flex: 4;
+      margin: 0;
+    //   background-color: cadetblue;
+      display: flex;
+      color: white;
+      @media (max-width: 993px) {
+        flex: 5;
+      }
+      @media (max-width: 768px) {
+        flex: 9;
+        flex-direction: column;
+      }
+      @media (max-width: 480px) {
+        flex: 9;
+        flex-direction: column;
+      }
+      .timediv {
+        flex: 3;
+        margin: 0;
+        // background-color: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 35px;
+        gap: 10px;
+        @media (max-width: 993px) {
+          padding-left: 10px;
+        }
+        @media (max-width: 768px) {
+          padding-left: 0px;
+          align-items: center;
+          gap: 7px;
+        }
+        @media (max-width: 480px) {
+          padding-left: 0px;
+          align-items: center;
+          gap: 7px;
+        }
+        p {
+          width: max-content;
+        //   background-color: aqua;
+          margin: 0;
+          font-size: 15px;
+          font-weight: 600;
+          @media (max-width: 993px) {
+            font-size: 15px;
+            font-weight: 600;
+          }
+          @media (max-width: 768px) {
+            font-size: 15px;
+            font-weight: 600;
+          }
+          @media (max-width: 480px) {
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+        h1 {
+          width: max-content;
+        //   background-color: beige;
+          margin: 0;
+          @media (max-width: 993px) {
+            font-size: 27px;
+          }
+          @media (max-width: 768px) {
+            font-size: 27px;
+          }
+          @media (max-width: 480px) {
+            font-size: 25px;
+          }
+        }
+      }
+      .emailandlinks {
+        flex: 5;
+        margin: 0;
+        // background-color: burlywood;
+        display: flex;
+        @media (max-width: 993px) {
+            flex-direction: column;
+        }
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+        @media (max-width: 480px) {
+            flex-direction: column;
+        }
+        .emaildiv {
+          margin: 0;
+        //   background-color: aqua;
+          flex: 3;
+          display: flex;
+          align-items: center;
+          padding-top: 40px;
+          @media (max-width: 993px) {
+            flex: 3;
+            padding-top: 0px;
+            justify-content: end;
+            padding-right: 20px;
+            align-items: end;
+          }
+          @media (max-width: 768px) {
+            flex: 1;
+            padding-top: 0px;
+            justify-content: center;
+            align-items: baseline;
+            padding: 0;
+          }
+          @media (max-width: 480px) {
+            flex: 1;
+            padding-top: 0px;
+            align-items: baseline;
+            justify-content: center;
+            padding: 0;
+          }
+          a{
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease; // Smooth color transition for hover effect
+            &:hover {
+              color: #aeafb0; // LinkedIn blue color on hover
+            }
+          h1{
+            margin: 0;
+            // background-color: blueviolet;
+            @media (max-width: 993px) {
+                font-size: 30px;
+              }
+              @media (max-width: 768px) {
+
+              }
+              @media (max-width: 480px) {
+                font-size: 25px;
+              }
+          }
+        }
+        }
+        .socialdiv {
+          margin: 0;
+          flex: 2;
+        //   background-color: rgb(255, 149, 0);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 15px;
+    
+          @media (max-width: 993px) {
+            flex: 4;
+            align-items: baseline;
+            justify-content: end;
+            padding-right: 20px;
+          }
+          @media (max-width: 768px) {
+            flex: 3;
+            justify-content: center;
+            padding: 0;
+            padding-bottom: 15px;
+          }
+          @media (max-width: 480px) {
+            flex: 3;
+            justify-content: center;
+            padding: 0;
+            padding-bottom: 20px;
+          }
+          .linkedin{
+            margin: 0;
+            @media (max-width: 993px) {
+                padding-top: 10px;
+              }
+              @media (max-width: 768px) {
+
+              }
+              @media (max-width: 480px) {
+
+              }
+            .linkedina{
+                padding-top: 35px;
+                display: flex;
+                text-decoration: none;
+                font-size: 37px;
+                color: white;
+                transition: color 0.2s ease; // Smooth color transition for hover effect
+                &:hover {
+                    color: #034f78; // LinkedIn blue color on hover
+                  }
+                  @media (max-width: 993px) {
+                    padding-top: 0;
+                  }
+                  @media (max-width: 768px) {
+                    padding-top: 0;
+                  }
+                  @media (max-width: 480px) {
+                    padding-top: 0;
+                  }
+            }
+
+          }
+          .twitter{
+            margin: 0;
+            .twittera{
+                padding-top: 35px;
+                display: flex;
+                text-decoration: none;
+                font-size: 37px;
+                color: white;
+                transition: color 0.2s ease; // Smooth color transition for hover effect
+                &:hover {
+                    color: #000000; // LinkedIn blue color on hover
+
+                  }
+                  @media (max-width: 993px) {
+                    padding-top: 0;
+                  }
+                  @media (max-width: 768px) {
+                    padding-top: 0;
+                  }
+                  @media (max-width: 480px) {
+                    padding-top: 0;
+                  }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.show .fullscreen-modal-content {
+    transform: translateY(0); // Slide down to final position
+  }
+}

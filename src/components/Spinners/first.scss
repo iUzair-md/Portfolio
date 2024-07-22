@@ -1,0 +1,82 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+.firstdiv {
+  height: 300vh; // Make this taller than the viewport
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  background: linear-gradient(rgb(255, 255, 255), rgba(32, 32, 56, 0.771));
+  .firsttrial {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      letter-spacing: -5px;
+      font-weight: 600;
+
+      line-height: 1;
+      font-size: 210px;
+      padding: 40px;
+      color: rgb(0, 0, 0);
+
+      // background-color: rgb(88, 136, 136);
+      position: fixed;
+      top: 13%;
+      transform-origin: center;
+      transition: transform 0.1s ease-out;
+      mask-image: radial-gradient(circle at center, transparent 50%, black 50%);
+      -webkit-mask-image: radial-gradient(
+        circle at center,
+        transparent 50%,
+        black 50%
+      );
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 633px; // Adjust size as needed
+        height: 633px; // Adjust size as needed
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        // background-color: rgb(22, 117, 149);
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      @media (max-width: 1333px) {
+        font-size: 185px;
+        text-align: center;
+        top: 17%;
+      }
+      @media (max-width: 1193px) {
+        font-size: 160px;
+        text-align: center;
+        top: 20%;
+      }
+      @media (max-width: 993px) {
+        font-size: 135px;
+        text-align: center;
+        top: 24%;
+      }
+      @media (max-width: 768px) {
+        font-size: 120px;
+        text-align: center;
+        top: 24%;
+      }
+
+      @media (max-width: 568px) {
+        font-size: 125px;
+        text-align: center;
+        top: 6%;
+      }
+      @media (max-width: 480px) {
+        font-size: 120px;
+        text-align: center;
+        top: 7%;
+      }
+    }
+  }
+}
