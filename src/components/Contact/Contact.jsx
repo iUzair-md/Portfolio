@@ -27,7 +27,7 @@ const Contact = () => {
 
     try {
       const response = await
-       axios.post("http://uzair-env.eba-kwdsjct8.us-east-1.elasticbeanstalk.com/api/users/sendinfo", formData, {
+       axios.post("https://portfolio-backend-production-1838.up.railway.app/api/users/sendinfo", formData, {
         headers: {
           "Content-Type": "application/json",
         },
