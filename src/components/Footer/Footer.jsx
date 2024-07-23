@@ -19,7 +19,13 @@ const Footer = () => {
         <Link to="/about" className="footer-link">
           <h1 className="button_test">ABOUT</h1>
         </Link>
-        <a className="footer-link-resume" href="">RESUME</a>
+        <a
+          className="footer-link-resume"
+          href="https://read.cv/iamuzair"
+          target="_blank"
+        >
+          RESUME
+        </a>
         <Link to="/contact" className="footer-link">
           <h1 className="button_test">CONTACT</h1>
         </Link>

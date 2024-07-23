@@ -26,7 +26,8 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8080/api/users/sendinfo", formData, {
+      const response = await
+       axios.post("http://uzair-env.eba-kwdsjct8.us-east-1.elasticbeanstalk.com/api/users/sendinfo", formData, {
         headers: {
           "Content-Type": "application/json",
         },
