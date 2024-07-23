@@ -36,6 +36,12 @@ const Contact = () => {
       if (response.status === 200) {
         setResponseMessage("Submitted Successfully");
         console.log(responseMessage)
+
+        setFormData({
+          email: "",
+          message: "",
+        });
+        
       } else {
         setResponseMessage("Submission failed");
       }
